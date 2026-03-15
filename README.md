@@ -184,12 +184,13 @@ El algoritmo transforma dos tipos de información en imagen:
 Esta combinación genera una interfaz audiovisual que responde tanto a la presencia activa del usuario como a la estructura rítmica y espectral de la canción.
 
 ## Implementaciones e iteraciones
+![implementaciones e iteraciones](https://github.com/WatermelonSuggar/Poster-Audio-Reactivo/blob/main/Referencias/Imagenes%20y%20documentacion%20visual/implementaciones%20e%20iteraciones.png)
 
-
+> Durante el proceso de desarrollo exploré de manera repetitiva con para encont
 
 ## Video demo
 
-Ver video [aquí](https://youtube.com/shorts/BnpSudKzlI0?feature=share)
+Ver video [aquí](https://youtube.com/shorts/Lc4etXwikRs?feature=share)
 
 ![FiltersImage](https://github.com/WatermelonSuggar/Poster-Audio-Reactivo/blob/main/Referencias/Imagenes%20y%20documentacion%20visual/filtros%20finales.png)
 
