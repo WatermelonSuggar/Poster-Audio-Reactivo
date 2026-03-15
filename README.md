@@ -125,6 +125,11 @@ Los outputs visuales del flowfield pueden variar en:
 En síntesis, el algoritmo generativo del proyecto transforma dos tipos de información en imagen: **el movimiento corporal y el sonido.** El movimiento actúa como detonante de cambio, reorganización y transición de estilos, mientras que el audio actúa como fuerza moduladora del entorno generativo. Esta combinación permite que la experiencia visual responda tanto a la presencia activa del usuario como a la estructura rítmica y espectral de la canción, generando una interfaz audiovisual dinámica, sensible y expresiva.
 
 ## Video demo
+
+Ver video [aquí](https://youtube.com/shorts/BnpSudKzlI0?feature=share)
+
+
+
 - Código
 - Fragmentos claves
 
