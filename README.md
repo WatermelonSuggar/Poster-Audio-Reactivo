@@ -6,7 +6,12 @@
 
 ## Conceptualización
 
-- Mi parte favorita del desarrollo de productos digitales es la conceptualización, la infinitud de posibilidades visuales, estéticas y narrativas impulsa mis ganas de crear. Sin embargo, a lo largo del camino creativo, el artista debe renunciar a muchas cosas: la idealización, las expectativas, los medios posibles de representación, la estética, el mensaje soñado, los colores, siluetas y la infinitud anteriormente mencionada. La pieza artística deja de ser suya, de su cabeza, para transformarse en realidad y hacer parte del mundo. Esta pieza artística está pensada para eventos en vivo en los que el control debe dejarse de lado y deben fijarse reglas visuales previaspara que el sistema pueda evolucionar y trabajar de manera adecuada, banners, cámaras, fondos, etc... y tiene como objetivo experimentar con **la detección de movimiento con background substracction y un frame diference temporal** y mezclando la captura de video en tiempo real, visuales audioreactivos.
+- Mi parte favorita del desarrollo de productos digitales es la conceptualización: la infinitud de posibilidades visuales, estéticas y narrativas que impulsan las ganas de crear.
+Sin embargo, a lo largo del camino creativo, el artista debe renunciar a muchas cosas: la idealización, las expectativas, los medios de representación posibles, la estética, el mensaje soñado, los colores, las siluetas y esa infinitud que lo motivó al principio. Internet es una galería interminable de universos posibles, estilos visuales que existen y coexisten, cada uno con sus propias reglas, su propio peso. Elegir uno solo ya es una renuncia. El concepto y el estilo visual como decisión creativa: diferentes estéticas, diferentes decisiones gráficas, un solo producto.
+
+La pieza deja de ser suya, de su cabeza, para transformarse en realidad y hacer parte del mundo.
+Esta pieza está pensada para eventos en vivo, donde el control debe soltarse y el artista debe fijar reglas visuales previas para que el sistema pueda evolucionar por su cuenta: banners, cámaras, fondos, condiciones de luz. A partir de esas reglas, el sistema vive solo.
+Técnicamente, es un experimento con detección de movimiento mediante background subtraction y frame difference temporal, mezclando captura de video en tiempo real con visuales audioreactivos en el fondo.
 
 ### Estética
 Encuadra un poster cambiante que responde al movimiento y al sonido. Bajo el mundo conceptual del álbum** Brat de Charlie XCX** que para mí representa libertad y riesgo. Como pieza musical para el demo elegí [**"Girl so confusing ft Lorde"**](https://www.youtube.com/watch?v=0q3K6FPzY18&list=RD0q3K6FPzY18&start_radio=1) porque basicamente representa muchos de los sentimientos por los que he transitado en la vida.
@@ -128,16 +133,9 @@ En síntesis, el algoritmo generativo del proyecto transforma dos tipos de infor
 
 Ver video [aquí](https://youtube.com/shorts/BnpSudKzlI0?feature=share)
 
+![FiltersImage](https://github.com/WatermelonSuggar/Poster-Audio-Reactivo/blob/main/Referencias/Imagenes%20y%20documentacion%20visual/filtros%20finales.png)
 
-
-- Código
-- Fragmentos claves
-
-## Aplicación del conocimiento
-
-- Gestión de la complejidad
-- Logro del objetivo
-- Proyecciones
+- [Código](https://editor.p5js.org/WatermelonSuggar/sketches/VDUSejWh-)
 
 ## Documentación visual
 
