@@ -2,7 +2,7 @@
 
 ## Inspiración audiovisual
 
-![image](https://github.com/WatermelonSuggar/Poster-Audio-Reactivo/blob/main/Referencias/Imagenes%20y%20documentacion%20visual/Referencias.png)
+![image](https://github.com/WatermelonSuggar/Poster-Audio-Reactivo/blob/main/Referencias/Imagenes%20y%20documentacion%20visual/ideacion.png)
 
 ## Conceptualización
 
@@ -17,7 +17,7 @@ Sin embargo, a lo largo del camino creativo, _el artista debe renunciar a muchas
 
 Técnicamente, es un experimento con **detección de movimiento mediante background subtraction y frame difference temporal**, mezclando captura de video en tiempo real con visuales audioreactivos en el fondo.
 
-## Estética
+## Estética y estructura inicial
 
 Encuadra un poster cambiante que responde al movimiento y al sonido, bajo el mundo conceptual del álbum **Brat de Charli XCX** — para mí, una representación de libertad y riesgo.
 
@@ -34,6 +34,9 @@ Como pieza musical para el demo elegí [**"Girl, So Confusing ft. Lorde"**](http
 | 🔲 **Dualidad entrelazada** | Dos canvas superpuestos en franjas |
 | 🎨 **Duotone** | Azul y verde |
 | 🕹️ **Pixel art** | Cromático, bloques de 8×8px |
+
+### Wireframe inicial
+![](https://github.com/WatermelonSuggar/Poster-Audio-Reactivo/blob/main/Referencias/Imagenes%20y%20documentacion%20visual/estructura.png)
 
 ---
 
