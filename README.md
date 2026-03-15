@@ -186,11 +186,11 @@ Esta combinación genera una interfaz audiovisual que responde tanto a la presen
 ## Implementaciones e iteraciones
 ![implementaciones e iteraciones](https://github.com/WatermelonSuggar/Poster-Audio-Reactivo/blob/main/Referencias/Imagenes%20y%20documentacion%20visual/implementaciones%20e%20iteraciones.png)
 
-> Durante el proceso de desarrollo exploré de manera repetitiva con para encont
+> Durante el proceso de desarrollo exploré de manera iterativa distintas posibilidades para encontrar la mejor forma de expresar el concepto. Empleé herramientas como Copilot y ChatGPT para describir estilos gráficos e implementarlos en código — un proceso de traducción constante entre lenguaje e imagen. En las referencias anteriores podrán observar el trabajo dedicado a la construcción de esta identidad visual.
 
 ## Video demo
 
-Ver video [aquí](https://youtube.com/shorts/Lc4etXwikRs?feature=share)
+Ver video [aquí](https://drive.google.com/file/d/1pQ1FjDpm15sGYdpx8B817emLqcI4nLPu/view?usp=drive_link)
 
 ![FiltersImage](https://github.com/WatermelonSuggar/Poster-Audio-Reactivo/blob/main/Referencias/Imagenes%20y%20documentacion%20visual/filtros%20finales.png)
 
