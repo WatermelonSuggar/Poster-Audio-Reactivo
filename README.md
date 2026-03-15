@@ -135,7 +135,7 @@ Ver video [aquí](https://youtube.com/shorts/BnpSudKzlI0?feature=share)
 
 ![FiltersImage](https://github.com/WatermelonSuggar/Poster-Audio-Reactivo/blob/main/Referencias/Imagenes%20y%20documentacion%20visual/filtros%20finales.png)
 
-- [Código](https://editor.p5js.org/WatermelonSuggar/sketches/VDUSejWh-)
+[Código](https://editor.p5js.org/WatermelonSuggar/sketches/VDUSejWh-)
 
 ## Documentación visual
 
