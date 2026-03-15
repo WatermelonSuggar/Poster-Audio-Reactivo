@@ -183,6 +183,9 @@ El algoritmo transforma dos tipos de información en imagen:
 
 Esta combinación genera una interfaz audiovisual que responde tanto a la presencia activa del usuario como a la estructura rítmica y espectral de la canción.
 
+## Implementaciones e iteraciones
+
+
 
 ## Video demo
 
