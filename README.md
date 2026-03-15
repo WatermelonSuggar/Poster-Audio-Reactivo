@@ -18,61 +18,53 @@ El poster a su vez explora visualmente cuatro tipos de filtos:
 - dualidad entrelazada (dos canvas superpuestos por pequeñas franjas)
 - filtro de alto contraste (verde y negro)
 
-
+![imagen de estetica](https://github.com/WatermelonSuggar/Poster-Audio-Reactivo/blob/main/Referencias/Imagenes%20y%20documentacion%20visual/estetica.png)
 
 ## Diseño de algoritmo generativo/detección de movimiento
-detección de movimiento se convierte en el elemento central de interacción con gráficos generativos.
 
-- ¿Cuál será la lógica central que genere los visuales?
-- Outputs visuales
-- Propiedades controladas dinámicamente:
-- Técnicas y conceptos de visualización usados
-- Estructura y flujo general
+* En este proyecto, la **detección de movimiento** se convierte en el eje central de interacción entre el cuerpo del usuario, el audio y el sistema visual generativo. La lógica del algoritmo parte de la** captura de video en tiempo real y del análisis del audio de una canción**, para traducir ambos flujos de datos en cambios visuales dinámicos dentro de una interfaz fragmentada y un fondo generativo basado en **flowfields**. De esta manera, el sistema no solo responde a la presencia del usuario, sino específicamente a la variación activa del movimiento y a las cualidades energéticas del sonido.
 
-Diseño de algoritmo generativo / detección de movimiento
-
-En este proyecto, la detección de movimiento se convierte en el eje central de interacción entre el cuerpo del usuario, el audio y el sistema visual generativo. La lógica del algoritmo parte de la captura de video en tiempo real y del análisis del audio de una canción, para traducir ambos flujos de datos en cambios visuales dinámicos dentro de una interfaz fragmentada y un fondo generativo basado en flowfields. De esta manera, el sistema no solo responde a la presencia del usuario, sino específicamente a la variación activa del movimiento y a las cualidades energéticas del sonido.
-
-Lógica central que genera los cambios, visuales e interacción
+### Lógica central que genera los cambios, visuales e interacción
 
 La lógica central del sistema se basa en una combinación de dos procesos: detección de movimiento por diferencia temporal de frames y análisis del audio en tiempo real. En primer lugar, la cámara captura una secuencia continua de imágenes y el sistema construye un fondo dinámico a partir de un buffer de varios frames recientes. Luego compara el frame actual con ese promedio temporal para identificar diferencias significativas de luminancia. Cuando estas diferencias superan un umbral, los píxeles son clasificados como zonas de movimiento. A partir de allí se calcula un porcentaje global de movimiento, que funciona como variable de control para activar transiciones visuales, reorganizar fragmentos de imagen y alternar entre distintos estilos de representación.
 
 En paralelo, el audio de la canción se analiza mediante amplitud general y espectro de frecuencias. Estos datos no reemplazan la detección de movimiento, sino que complementan la experiencia generativa: mientras el movimiento corporal define los cambios de estado y la activación de efectos visuales, el audio modula la expresividad del fondo generativo, especialmente el comportamiento del flowfield, el color y la intensidad de las líneas.
 
-En consecuencia, la interacción se estructura como una relación híbrida: el cuerpo del usuario actúa como disparador y modulador visual, mientras que el audio aporta variación orgánica, ritmo e intensidad estética.
+> En consecuencia, la interacción se estructura como una **relación híbrida:** el cuerpo del usuario actúa como disparador y modulador visual, mientras que el audio aporta variación orgánica, ritmo e intensidad estética.
 
-Inputs
-1. Input visual: interacción por movimiento
+### Inputs
 
-El principal input interactivo del sistema es la imagen capturada por la cámara en tiempo real. A partir de esta señal visual, el sistema extrae información relacionada con el cambio entre frames consecutivos y el fondo temporal promedio. Este procesamiento permite detectar movimiento activo en la escena, no solo presencia estática.
+**1. Input visual: interacción por movimiento**
 
-Las variables derivadas de este input son:
+- El principal input interactivo del sistema es la imagen capturada por la cámara en tiempo real. A partir de esta señal visual, el sistema extrae información relacionada con el cambio entre frames consecutivos y el fondo temporal promedio. Este procesamiento permite detectar movimiento activo en la escena, no solo presencia estática.
 
-diferencia de luminancia por píxel
+**Las variables derivadas de este input son:**
 
-máscara binaria de movimiento
+- diferencia de luminancia por píxel
 
-porcentaje global de movimiento en pantalla
+- máscara binaria de movimiento
 
-estado de movimiento, por ejemplo leve o moderado
+- porcentaje global de movimiento en pantalla
+
+- estado de movimiento, por ejemplo leve o moderado
 
 Estas variables controlan directamente la reorganización de la interfaz visual, la transición entre filtros y el ritmo de cambio de los efectos.
 
-2. Input sonoro: análisis de audio
+**2. Input sonoro: análisis de audio**
 
-El segundo input del sistema es el audio de una canción cargada dentro del proyecto. Este audio se analiza en tiempo real mediante herramientas de amplitud y FFT.
+- El segundo input del sistema es el audio de una canción cargada dentro del proyecto. Este audio se analiza en tiempo real mediante herramientas de amplitud y FFT.
 
-Las variables utilizadas son:
+**Las variables utilizadas son:**
 
-Amplitud
+- Amplitud
 Representa el volumen general de la canción en un momento dado.
 Uso técnico: amp.getLevel()
 
-FFT
+- FFT
 Permite analizar la distribución de energía en distintas frecuencias del espectro sonoro.
 Uso técnico: fft.analyze()
 
-Banda de graves
+- Banda de graves
 Corresponde a la energía de las frecuencias bajas, aproximadamente entre 20 y 250 Hz.
 Uso técnico: fft.getEnergy("bass")
 
@@ -84,54 +76,53 @@ agudos: fft.getEnergy("treble")
 
 waveform: fft.waveform()
 
-Estas variables modulan el fondo generativo, haciendo que el flowfield cambie en densidad, torsión, velocidad, color o grosor según la estructura sonora de la canción.
+> Estas variables modulan el fondo generativo, haciendo que el flowfield cambie en densidad, torsión, velocidad, color o grosor según la estructura sonora de la canción.
 
-Outputs visuales
+### Outputs visuales
 
 Los outputs visuales del sistema se dividen en dos capas principales.
 
-1. Interfaz de video fragmentado
+**1. Interfaz de video fragmentado**
 
 La primera capa consiste en una composición visual formada por un recuadro principal que muestra la captura de video y varios fragmentos inferiores que presentan recortes de esa misma imagen. Sobre esta base se aplican distintos estilos visuales que cambian automáticamente según la detección de movimiento.
 
 Entre los outputs visuales de esta capa se encuentran:
 
-imagen normal
+- imagen de alto contraste monocromática
 
-interlace monocromático de alto contraste
+- interlace monocromático de alto contraste
 
-máscara binaria
+- máscara binaria
 
-pixelart cromático
+- pixelart cromático
 
-duotone
+- duotone
 
-El cambio entre estos estilos no es aleatorio, sino que responde al porcentaje de movimiento detectado y a una lógica temporal de transición.
+> El cambio entre estos estilos no es aleatorio, sino que responde al porcentaje de movimiento detectado y a una lógica temporal de transición.
 
-2. Fondo generativo basado en flowfield
+**2. Fondo generativo basado en flowfield**
 
 La segunda capa corresponde al fondo generativo. Este sistema utiliza líneas guiadas por un campo vectorial orgánico, construido a partir de ruido y modulado por parámetros sonoros. El resultado es un campo de líneas fluidas que cambia con la música y que funciona como atmósfera visual envolvente detrás de la interfaz principal.
 
 Los outputs visuales del flowfield pueden variar en:
 
-dirección y curvatura
+- dirección y curvatura
 
-densidad
+- densidad
 
-longitud de línea
+- longitud de línea
 
-grosor
+- grosor
 
-intensidad
+- intensidad
 
-color, por ejemplo alternancias entre blanco, rojo, azul o gamas verdes
+- color, por ejemplo alternancias gamas verdes
 
-De este modo, el fondo no es decorativo, sino una capa reactiva que traduce la energía sonora en comportamiento visual continuo.
+> De este modo, el fondo no es decorativo, sino una capa reactiva que traduce la energía sonora en comportamiento visual continuo.
 
-Síntesis conceptual del algoritmo
+## Síntesis conceptual del algoritmo
 
-En síntesis, el algoritmo generativo del proyecto transforma dos tipos de información en imagen: el movimiento corporal y el sonido. El movimiento actúa como detonante de cambio, reorganización y transición de estilos, mientras que el audio actúa como fuerza moduladora del entorno generativo. Esta combinación permite que la experiencia visual responda tanto a la presencia activa del usuario como a la estructura rítmica y espectral de la canción, generando una interfaz audiovisual dinámica, sensible y expresiva.
-
+En síntesis, el algoritmo generativo del proyecto transforma dos tipos de información en imagen: **el movimiento corporal y el sonido.** El movimiento actúa como detonante de cambio, reorganización y transición de estilos, mientras que el audio actúa como fuerza moduladora del entorno generativo. Esta combinación permite que la experiencia visual responda tanto a la presencia activa del usuario como a la estructura rítmica y espectral de la canción, generando una interfaz audiovisual dinámica, sensible y expresiva.
 
 ## Video demo
 - Código
