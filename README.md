@@ -1,5 +1,7 @@
 # Poster-Audio-Reactivo
 
+### 🦖 Wendy Michell Martínez Pinzón - Interactive media engineering
+
 ## Inspiración audiovisual
 
 ![image](https://github.com/WatermelonSuggar/Poster-Audio-Reactivo/blob/main/Referencias/Imagenes%20y%20documentacion%20visual/ideacion.png)
